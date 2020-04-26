@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milionerzy JS</title>
+    <style>
+      html {
+        background-color: rgb(0, 82, 206);
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="olbrzym">
+<h3>Koła ratunkowe są na dole.</h3>
+<br>
+      <h3>Pytanie za: 500zł</h3>
+      <span>Kiedy odbył się pierwszy wyścig F1?</span>
+      <form name="pyt11">
+        <span class="od11"><input type="radio" name="odp11" class="a" value="a">A.1950r<br></span>
+      </form name="pyt11">
+      <form name="pyt12">
+        <span class="od12"><input type="radio" name="odp12" class="b" value="b">B.1958r<br></span>
+      </form name="pyt12">
+      <form name="pyt13">
+        <span class="od13"> <input type="radio" name="odp13" class="c" value="c">C.1948r<br></span>
+      </form name="pyt13">
+      <form name="pyt14">
+        <span class="od14"><input type="radio" name="odp14" class="d" value="d">D.1955r<br></span>
+      </form name="pyt14">
+      <button type="button" onclick="odpowiedzi1()">Sprawdź</button>
+      </br>
+      </br>
+      <h3>Pytanie za 1000zł, jest to kwota gwarantowana.</h3>
+      <span>Ile wynosi rekord długości skoku w skokach narciarskich?</span>
+      <form name="pyt21">
+        <span class="od21"><input type="radio" name="odp21" class="a" value="a">A.250m<br></span>
+      </form name="pyt21">
+      <form name="pyt22">
+        <span class="od22"><input type="radio" name="odp22" class="b" value="b">B.253,5m<br></span>
+      </form name="pyt22">
+      <form name="pyt23">
+        <span class="od23"> <input type="radio" name="odp23" class="c" value="c">C.222,5m<br></span>
+      </form name="pyt23">
+      <form name="pyt24">
+        <span class="od24"><input type="radio" name="odp24" class="d" value="d">D.255m<br></span>
+      </form name="pyt24">
+      <button type="button" onclick="odpowiedzi2()">Sprawdź</button>
+      </br>
+      </br>
+      <h3>Oto pytanie za 2000zł</h3>
+      <span>Który kierowca F1 ma najwięcej zdobytych Pole Position?</span>
+      <form name="pyt31">
+        <span class="od31"><input type="radio" name="odp31" class="a" value="a">A.Ayrton Senna<br></span>
+      </form name="pyt31">
+      <form name="pyt32">
+        <span class="od32"><input type="radio" name="odp32" class="b" value="b">B.Michael Schumacher<br></span>
+      </form name="pyt32">
+      <form name="pyt33">
+        <span class="od33"> <input type="radio" name="odp33" class="c" value="c">C.Sebastian Vettel<br></span>
+      </form name="pyt33">
+      <form name="pyt34">
+        <span class="od34"><input type="radio" name="odp34" class="d" value="d">D.Lewis Hamilton<br></span>
+      </form name="pyt34">
+      <button type="button" onclick="odpowiedzi3()">Sprawdź</button>
+
+
+      <br>
+      <br>
+      <h3>Pytanie za 5000zł</h3>
+      <span>Który zawodnik w skokach narciarskich ma najwięcej wygranych w PŚ?</span>
+      <form name="pyt41">
+        <span class="od41"><input type="radio" name="odp41" class="a" value="a">A.Gregor Schlierenzauer<br></span>
+      </form name="pyt41">
+      <form name="pyt42">
+        <span class="od42"><input type="radio" name="odp42" class="b" value="b">B.Adam Małysz<br></span>
+      </form name="pyt42">
+      <form name="pyt43">
+        <span class="od43"> <input type="radio" name="od43" class="c" value="c">C.Matti Nykanen<br></span>
+      </form name="pyt43">
+      <form name="pyt44">
+        <span class="od44"><input type="radio" name="odp44" class="d" value="d">D.Thomas Morgenstern<br></span>
+      </form name="pyt44">
+      <button type="button" onclick="odpowiedzi4()">Sprawdź</button>
+
+      <br>
+      <br>
+      <h3>Oto pytanie za 10 000zł</h3>
+      <span>Najmłodszy mistrz świata w F1 to:</span>
+      <form name="pyt51">
+        <span class="od51"><input type="radio" name="odp51" class="a" value="a">A.Fernando Alonso<br></span>
+      </form name="pyt51">
+      <form name="pyt52">
+        <span class="od52"><input type="radio" name="odp52" class="b" value="b">B.Max Verstappen<br></span>
+      </form name="pyt52">
+      <form name="pyt53">
+        <span class="od53"> <input type="radio" name="odp53" class="c" value="c">C.Sebastian Vettel<br></span>
+      </form name="pyt53">
+      <form name="pyt54">
+        <span class="od54"><input type="radio" name="odp54" class="d" value="d">D.Lewis Hamilton<br></span>
+      </form name="pyt54">
+      <button type="button" onclick="odpowiedzi5()">Sprawdź</button>
+
+      <br>
+      <br>
+      <h3>Pytanie za 20 000zł</h3>
+      <span>Kim był kanclerz Palpatine?</span>
+      <form name="pyt61">
+        <span class="od61"><input type="radio" name="odp61" class="a" value="a">A.Rycerzem Jedi<br></span>
+      </form name="pyt61">
+      <form name="pyt62">
+        <span class="od62"><input type="radio" name="odp62" class="b" value="b">B.Klonem<br></span>
+      </form name="pyt62">
+      <form name="pyt63">
+        <span class="od63"> <input type="radio" name="odp63" class="c" value="c">C.Darth Sidious<br></span>
+      </form name="pyt63">
+      <form name="pyt64">
+        <span class="od64"><input type="radio" name="odp64" class="d" value="d">D.Darth Vader<br></span>
+      </form name="pyt64">
+      <button type="button" onclick="odpowiedzi6()">Sprawdź</button>
+
+      <br>
+      <br>
+      <h3>A oto pytanie za 40 000zł. To kwota gwarantowana.</h3>
+      <span>Christian Bale zagrał w filmie:</span>
+      <form name="pyt71">
+        <span class="od71"><input type="radio" name="odp71" class="a" value="a">A.Piraci Z Karaibów<br></span>
+      </form name="pyt71">
+      <form name="pyt72">
+        <span class="od72"><input type="radio" name="odp72" class="b" value="b">B.Mroczny Rycerz<br></span>
+      </form name="pyt72">
+      <form name="pyt73">
+        <span class="od73"> <input type="radio" name="odp73" class="c" value="c">C.Szybcy I Wściekli<br></span>
+      </form name="pyt73">
+      <form name="pyt74">
+        <span class="od74"><input type="radio" name="odp74" class="d" value="d">D.Avengers<br></span>
+      </form name="pyt74">
+      <button type="button" onclick="odpowiedzi7()">Sprawdź</button>
+      <br>
+      <br>
+      <h3>Pytanie za kwote 75 000zł</h3>
+      <span>Do ilu stopni dochodzi temperatura opon w F1?</span>
+      <form name="pyt81">
+        <span class="od81"><input type="radio" name="odp81" class="a" value="a">A.120 stopni Celcjusza<br></span>
+      </form name="pyt81">
+      <form name="pyt82">
+        <span class="od82"><input type="radio" name="odp82" class="b" value="b">B.140 stopni Celcjusza<br></span>
+      </form name="pyt82">
+      <form name="pyt83">
+        <span class="od83"> <input type="radio" name="odp83" class="c" value="c">C.155 stopni Celcjusza<br></span>
+      </form name="pyt83">
+      <form name="pyt84">
+        <span class="od84"><input type="radio" name="odp84" class="d" value="d">D.60 stopni Celcjusza<br></span>
+      </form name="pyt84">
+      <button type="button" onclick="odpowiedzi8()">Sprawdź</button>
+      </br>
+      </br>
+      <h3>Pytanie za 125 000zł</h3>
+      <span>Kto jest ojcem chrzestnym Harrego Pottera?</span>
+      <form name="pyt91">
+        <span class="od91"><input type="radio" name="odp91" class="a" value="a">A.Syriusz Black<br></span>
+      </form name="pyt91">
+      <form name="pyt92">
+        <span class="od92"><input type="radio" name="odp92" class="b" value="b">B.Albus Dumbledore<br></span>
+      </form name="pyt92">
+      <form name="pyt93">
+        <span class="od93"> <input type="radio" name="odp93" class="c" value="c">C.Severus Snape<br></span>
+      </form name="pyt93">
+      <form name="pyt94">
+        <span class="od94"><input type="radio" name="odp94" class="d" value="d">D.Tom Riddle<br></span>
+      </form name="pyt94">
+      <button type="button" onclick="odpowiedzi9()">Sprawdź</button>
+      </br>
+      </br>
+      <h3>Pytanie za 250 000zł</h3>
+      <span>Kto pokazał Harry'emu zdjęcie "starego" zakonu feniksa?</span>
+      <form name="pyt101">
+        <span class="od101"><input type="radio" name="odp101" class="a" value="a">A.Syriusz<br></span>
+      </form name="pyt101">
+      <form name="pyt102">
+        <span class="od102"><input type="radio" name="odp102" class="b" value="b">B.Molly<br></span>
+      </form name="pyt102">
+      <form name="pyt103">
+        <span class="od103"> <input type="radio" name="odp103" class="c" value="c">C.Moddy<br></span>
+      </form name="pyt103">
+      <form name="pyt104">
+        <span class="od104"><input type="radio" name="odp104" class="d" value="d">D.Remus<br></span>
+      </form name="pyt104">
+      <button type="button" onclick="odpowiedzi10()">Sprawdź</button>
+      </br>
+      </br>
+      <h3>Pytanie za 500 000zł</h3>
+      <span>Kiedy nakręcono ostatnią część Harrego Pottera?</span>
+      <form name="pyt111">
+        <span class="od111"><input type="radio" name="odp111" class="a" value="a">A.2011r<br></span>
+      </form name="pyt111">
+      <form name="pyt112">
+        <span class="od112"><input type="radio" name="odp112" class="b" value="b">B.2012r<br></span>
+      </form name="pyt112">
+      <form name="pyt113">
+        <span class="od113"> <input type="radio" name="odp113" class="c" value="c">C.2010r<br></span>
+      </form name="pyt113">
+      <form name="pyt114">
+        <span class="od114"><input type="radio" name="odp114" class="d" value="d">D.2009r<br></span>
+      </form name="pyt114">
+      <button type="button" onclick="odpowiedzi11()">Sprawdź</button>
+      </br>
+      </br>
+      <h3>FINAŁOWE pytanie za 1MLN zł</h3>
+      <span>Jaka jest rekordowa prędkość w leju tornada?</span>
+      <form name="pyt121">
+        <span class="od121"><input type="radio" name="odp121" class="a" value="a">A.488km/h<br></span>
+      </form name="pyt121">
+      <form name="pyt122">
+        <span class="od122"><input type="radio" name="odp122" class="b" value="b">B.478km/h<br></span>
+      </form name="pyt122">
+      <form name="pyt123">
+        <span class="od123"> <input type="radio" name="odp123" class="c" value="c">C.490km/h<br></span>
+      </form name="pyt123">
+      <form name="pyt124">
+        <span class="od124"><input type="radio" name="odp124" class="d" value="d">D.484km/h<br></span>
+      </form name="pyt124">
+      <button type="button" onclick="odpowiedzi12()">Sprawdź</button>
+    </br>
+
+      <button type="button" class="fif">50/50</button>
+      <button type="button" class="pyt_do_wid">Pytanie do widowni</button>
+      <button type="button" class="tel_do_przyj">Telefon do przyjaciela</button>
+
+      <div class="podpowiedzprzy"></div>
+      <div class="podpowiedzwid"></div>
+    </div>
+    <script>
+      parent = document.querySelector('.olbrzym')
+      const fifty = document.querySelector('.fif');
+      const pyt_do_wid = document.querySelector('.pyt_do_wid');
+      const tel_do_przyj = document.querySelector('.tel_do_przyj');
+
+      const aa = document.querySelector('.od11');
+      const bb = document.querySelector('.od12');
+      const cc = document.querySelector('.od13');
+      const dd = document.querySelector('.od14');
+
+      const a2 = document.querySelector('.od21');
+      const b2 = document.querySelector('.od22');
+      const c2 = document.querySelector('.od23');
+      const d2 = document.querySelector('.od24');
+
+      const a3 = document.querySelector('.od31');
+      const b3 = document.querySelector('.od32');
+      const c3 = document.querySelector('.od33');
+      const d3 = document.querySelector('.od34');
+
+      const a4 = document.querySelector('.od41');
+      const b4 = document.querySelector('.od42');
+      const c4 = document.querySelector('.od43');
+      const d4 = document.querySelector('.od44');
+
+      const a5 = document.querySelector('.od51');
+      const b5 = document.querySelector('.od52');
+      const c5 = document.querySelector('.od53');
+      const d5 = document.querySelector('.od54');
+
+      const a6 = document.querySelector('.od61');
+      const b6 = document.querySelector('.od62');
+      const c6 = document.querySelector('.od63');
+      const d6 = document.querySelector('.od64');
+
+      const a7 = document.querySelector('.od71');
+      const b7 = document.querySelector('.od72');
+      const c7 = document.querySelector('.od73');
+      const d7 = document.querySelector('.od74');
+
+      const a8 = document.querySelector('.od81');
+      const b8 = document.querySelector('.od82');
+      const c8 = document.querySelector('.od83');
+      const d8 = document.querySelector('.od84');
+
+      const a9 = document.querySelector('.od91');
+      const b9 = document.querySelector('.od92');
+      const c9 = document.querySelector('.od93');
+      const d9 = document.querySelector('.od94');
+
+      const a10 = document.querySelector('.od101');
+      const b10 = document.querySelector('.od102');
+      const c10 = document.querySelector('.od103');
+      const d10 = document.querySelector('.od104');
+
+      const a11 = document.querySelector('.od111');
+      const b11 = document.querySelector('.od112');
+      const c11 = document.querySelector('.od113');
+      const d11 = document.querySelector('.od114');
+
+      const a12 = document.querySelector('.od121');
+      const b12 = document.querySelector('.od122');
+      const c12 = document.querySelector('.od123');
+      const d12 = document.querySelector('.od124');
+
+      fifty.addEventListener("click", function() {
+        if (prawidlowe == 0) {
+          dd.remove();
+          cc.remove();
+        }
+        if (prawidlowe == 1) {
+          a2.remove();
+          d2.remove();
+        }
+        if (prawidlowe == 2) {
+          c3.remove();
+          b3.remove();
+        }
+        if (prawidlowe == 3) {
+          b4.remove();
+          d4.remove();
+        }
+        if (prawidlowe == 4) {
+          b5.remove();
+          a5.remove();
+        }
+        if (prawidlowe == 5) {
+          a6.remove();
+          d6.remove();
+        }
+        if (prawidlowe == 6) {
+          c7.remove();
+          a7.remove();
+        }
+        if (prawidlowe == 7) {
+          c8.remove();
+          d8.remove();
+        }
+        if (prawidlowe == 8) {
+          b9.remove();
+          d9.remove();
+        }
+        if (prawidlowe == 9) {
+          a10.remove();
+          b10.remove();
+        }
+        if (prawidlowe == 10) {
+          c11.remove();
+          d11.remove();
+        }
+        if (prawidlowe == 11) {
+          b12.remove();
+          c12.remove();
+        }
+        parent.removeChild(fifty);
+      });
+
+
+      pyt_do_wid.addEventListener("click", function() {
+        if (prawidlowe == 0) {
+          const div = document.querySelector('.podpowiedzwid');
+          div.innerHTML = "30% na odpowiedz A, 15% na odpowiedz B, na odpowiedz C 30%, a na odpowiedz D 25%";
+        }
+        if (prawidlowe == 1) {
+          const div = document.querySelector('.podpowiedzwid');
+          div.innerHTML = "40% na odpowiedz A, 55% na odpowiedz B, na odpowiedz C 2%, a na odpowiedz D 3%";
+        }
+        if (prawidlowe == 2) {
+          const div = document.querySelector('.podpowiedzwid');
+          div.innerHTML = "10% na odpowiedz A, 25% na odpowiedz B, na odpowiedz C 30%, a na odpowiedz D 35%";
+        }
+        if (prawidlowe == 3) {
+          const div = document.querySelector('.podpowiedzwid');
+          div.innerHTML = "70% na odpowiedz A, 10% na odpowiedz B, na odpowiedz C 10%, a na odpowiedz D 10%";
+        }
+        if (prawidlowe == 4) {
+          const div = document.querySelector('.podpowiedzwid');
+          div.innerHTML = "30% na odpowiedz A, 10% na odpowiedz B, na odpowiedz C 30%, a na odpowiedz D 30%";
+        }
+        if (prawidlowe == 5) {
+          const div = document.querySelector('.podpowiedzwid');
+          div.innerHTML = "0% na odpowiedz A, 10% na odpowiedz B, na odpowiedz C 60%, a na odpowiedz D 30%";
+        }
+        if (prawidlowe == 6) {
+          const div = document.querySelector('.podpowiedzwid');
+          div.innerHTML = "25% na odpowiedz A, 70% na odpowiedz B, na odpowiedz C 2%, a na odpowiedz D 3%";
+        }
+        if (prawidlowe == 7) {
+          const div = document.querySelector('.podpowiedzwid');
+          div.innerHTML = "25% na odpowiedz A, 30% na odpowiedz B, na odpowiedz C 25%, a na odpowiedz D 20%";
+        }
+        if (prawidlowe == 8) {
+          const div = document.querySelector('.podpowiedzwid');
+          div.innerHTML = "70% na odpowiedz A, 10% na odpowiedz B, na odpowiedz C 20%, a na odpowiedz D 0%";
+        }
+        if (prawidlowe == 9) {
+          const div = document.querySelector('.podpowiedzwid');
+          div.innerHTML = "15% na odpowiedz A, 30% na odpowiedz B, na odpowiedz C 40%, a na odpowiedz D 15%";
+        }
+        if (prawidlowe == 10) {
+          const div = document.querySelector('.podpowiedzwid');
+          div.innerHTML = "40% na odpowiedz A, 20% na odpowiedz B, na odpowiedz C 30%, a na odpowiedz D 10%";
+        }
+        if (prawidlowe == 10) {
+          const div = document.querySelector('.podpowiedzwid');
+          div.innerHTML = "25% na odpowiedz A, 20% na odpowiedz B, na odpowiedz C 25%, a na odpowiedz D 30%";
+        }
+        parent.removeChild(pyt_do_wid);
+      });
+
+      tel_do_przyj.addEventListener("click", function() {
+        if (prawidlowe == 0) {
+          const div = document.querySelector('.podpowiedzprzy');
+
+          div.innerHTML = "Nie jestem pewien żadnej opowiedzi, ale myślę, że to odpowiedz A";
+        }
+        if (prawidlowe == 1) {
+          const div = document.querySelector('.podpowiedzprzy');
+          div.innerHTML = "To jest zdecydowanie odpowiedź B. 253,5m";
+        }
+        if (prawidlowe == 2) {
+          const div = document.querySelector('.podpowiedzprzy');
+          div.innerHTML = "Albo, to Senna, albo Hamilton.";
+        }
+        if (prawidlowe == 3) {
+          const div = document.querySelector('.podpowiedzprzy');
+          div.innerHTML = "Napewno Gregor!";
+        }
+        if (prawidlowe == 4) {
+          const div = document.querySelector('.podpowiedzprzy');
+          div.innerHTML = "Raczej Vettel, ale Hamilton, też wygrał, gdy był młody.";
+        }
+        if (prawidlowe == 5) {
+          const div = document.querySelector('.podpowiedzprzy');
+          div.innerHTML = "Co za łatwe pytanie, to jest odpowiedź C Lord Sithów.";
+        }
+        if (prawidlowe == 6) {
+          const div = document.querySelector('.podpowiedzprzy');
+          div.innerHTML = "Raczej odpowiedz B.";
+        }
+        if (prawidlowe == 7) {
+          const div = document.querySelector('.podpowiedzprzy');
+          div.innerHTML = "Napewno nie odpowiedź D, tego jestem pewny i tylko tego.";
+        }
+        if (prawidlowe == 8) {
+          const div = document.querySelector('.podpowiedzprzy');
+          div.innerHTML = "D napewno nie, C też nie iii tylko tyle wiem.";
+        }
+        if (prawidlowe == 9) {
+          const div = document.querySelector('.podpowiedzprzy');
+          div.innerHTML = "Eee nie mam pojęcia... Ale nie A i nie B.";
+        }
+        if (prawidlowe == 10) {
+          const div = document.querySelector('.podpowiedzprzy');
+          div.innerHTML = "2012 napewno nie bo to było dawniej, chyba A.";
+        }
+        if (prawidlowe == 11) {
+          const div = document.querySelector('.podpowiedzprzy');
+          div.innerHTML = "Nie mam pojęcia przykro mi.";
+        }
+        parent.removeChild(tel_do_przyj);
+      });
+
+
+      var prawidlowe = 0;
+
+      function odpowiedzi1() {
+        if (window.document.pyt11.odp11.checked == true) {
+          prawidlowe = prawidlowe + 1;
+
+          alert("Gratulacje! Masz już 500zł.");
+        } else {
+          alert("Przykro nam, wychodzisz z programu mając 0.");
+        }
+      }
+
+      function odpowiedzi2() {
+        if (window.document.pyt22.odp22.checked == true) {
+          prawidlowe = prawidlowe + 1;
+
+          alert("Brawo! Masz na swoim konice gwarantowane 1000zł.");
+        } else {
+          alert('Wygrywasz okrągłe 0zł.');
+        }
+      }
+
+      function odpowiedzi3() {
+        if (window.document.pyt34.odp34.checked == true) {
+          prawidlowe = prawidlowe + 1;
+
+          alert("Dobrze odpowiedziałeś i masz 2000zł.");
+        } else {
+          alert('Wychodzisz z programu mając 1000zł.');
+        }
+      }
+
+      function odpowiedzi4() {
+        if (window.document.pyt41.odp41.checked == true) {
+          prawidlowe = prawidlowe + 1;
+
+          alert("Niesamowite! Posiadasz na koncie już 5000zł.");
+        } else {
+          alert('Odchodzisz mając 1000zł. Przykro nam.');
+        }
+      }
+
+      function odpowiedzi5() {
+        if (window.document.pyt53.odp53.checked == true) {
+          prawidlowe = prawidlowe + 1;
+
+          alert("Ktoś tu jest fanem F1. Masz już 10 000zł!.");
+        } else {
+          alert('Formuła 1 nie jest dla ciebie. Przegrałeś odchodząc z 1000zł.');
+        }
+      }
+
+      function odpowiedzi6() {
+        if (window.document.pyt63.odp63.checked == true) {
+          prawidlowe = prawidlowe + 1;
+
+          alert("Jesteś po jasne stronie mocy? Wygrałeś i masz już 20 000zł.");
+        } else {
+          alert('Coś się komuś pomyliło. Przegrałeś mając 1000zł.');
+        }
+      }
+
+      function odpowiedzi7() {
+        if (window.document.pyt72.odp72.checked == true) {
+          prawidlowe = prawidlowe + 1;
+
+          alert("Wow masz już 40 000zł i to jest kwota gwarantowana.");
+        } else {
+          alert('Było bardzo blisko! Wychodzisz z programu mając 1000zł');
+        }
+      }
+
+      function odpowiedzi8() {
+        if (window.document.pyt82.odp82.checked == true) {
+          prawidlowe = prawidlowe + 1;
+
+          alert("Ktoś tu lubi gorąc, masz 75 000zł.");
+        } else {
+          alert('Loser, zarobiłeś 40 000zł.');
+        }
+      }
+
+      function odpowiedzi9() {
+        if (window.document.pyt91.odp91.checked == true) {
+          prawidlowe = prawidlowe + 1;
+
+          alert("Wybrałeś prawidłową odpowiedź i masz 125 000zł!");
+        } else {
+          alert('Nie udało się i masz 40 000zł');
+        }
+      }
+
+      function odpowiedzi10() {
+        if (window.document.pyt103.odp103.checked == true) {
+          prawidlowe = prawidlowe + 1;
+
+          alert("Ktoś tutaj oglądał Pottera! Masz 250 000zł.");
+        } else {
+          alert('A było blisko końca, odchodzisz majać 40 000zł.');
+        }
+      }
+
+      function odpowiedzi11() {
+        if (window.document.pyt111.odp111.checked == true) {
+          prawidlowe = prawidlowe + 1;
+
+          alert("Przed nami finał!");
+        } else {
+          alert('Masz pecha i wygrywasz tylko 40 000zł');
+        }
+      }
+
+      function odpowiedzi12() {
+        if (window.document.pyt124.odp124.checked == true) {
+          prawidlowe = prawidlowe + 1;
+
+          alert("Gratulacje! Wygrałeś program i milion złotych!");
+        } else {
+          alert('Przykro nam wygrałeś tylko 40 000zł.');
+        }
+      }
+
+    </script>
+
+  </body>
+
+</html>
